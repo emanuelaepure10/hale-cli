@@ -1,6 +1,27 @@
 # Change Log
+
 All notable changes to this project will be documented in this file.
 See the [change log guidelines](http://keepachangelog.com/) for information on how to structure the file.
+
+## [5.1.0]
+
+### Added
+
+- Simplify the setup process with automated creation of deegree configurations and capabilities for WFS/WMS services.
+- Introduced support for the MS Access JDBC driver, expanding connectivity options for your database needs.
+- Migration to Java 17, updating Gradle Docker plugin to 9.3.1 and baseImage to Java 17, ensuring compatibility and leveraging the latest Java features.
+- Updated dependencies addressing security vulnerabilities, safeguarding your system against potential threats.
+- Added support to custom functions for merge statistics, offering more flexibility and customization options.
+
+### Build Improvements
+
+- Fixed the deployArtifact script to ensure reliable deployment of artifacts to the wetransform Artifactory.
+- Introducing an automated build process that generates builds for Linux, Mac, and Windows platforms with every change to the master branch, streamlining development workflows.
+- Migrated Continuous Integration (CI) to GitHub Actions, enhancing development efficiency and automation capabilities.
+
+### Fixed
+
+- Resolved an error occurring when not collecting statistics in the alignment migrator, ensuring smooth operation without disruptions.
 
 ## [4.0.0]
 
@@ -111,6 +132,7 @@ Initial release based on hale studio 3.0.0.
 - Command to generate JSON representations of hale alignments (`hale project alignment export-json`)
 - Experimental command to filter to create a copy of a hale project with a filtered alignment (`hale project alignment filter`)
 
+[5.1.0]: https://github.com/halestudio/hale-cli/compare/v4.0.0...v5.1.0
 [4.0.0]: https://github.com/halestudio/hale-cli/compare/v3.5.0...v4.0.0
 [3.5.0]: https://github.com/halestudio/hale-cli/compare/v3.4.0...v3.5.0
 [3.4.0]: https://github.com/halestudio/hale-cli/compare/v3.3.2...v3.4.0
